@@ -1,0 +1,9 @@
+*.class
+*.log
+*.iws
+*.tmx
+*.json
+out/
+bin/
+maps/
+build/
