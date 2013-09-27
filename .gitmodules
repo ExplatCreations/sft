@@ -1,0 +1,9 @@
+[submodule "SniffysFlipTrip/data"]
+	path = SniffysFlipTrip/data
+	url = https://github.com/ExplatCreations/sft-data.git
+[submodule "SniffysFlipTrip/assets"]
+	path = SniffysFlipTrip/assets
+	url = https://github.com/ExplatCreations/sft-assets.git
+[submodule "SniffysFlipTrip/libs"]
+	path = SniffysFlipTrip/libs
+	url = https://github.com/ExplatCreations/sft-libs.git
