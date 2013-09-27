@@ -30,5 +30,4 @@ See https://github.com/ExplatCreations/sft/wiki/how-to
 Future
 ------
 
-At this time we have no concrete plans to expand on the game. Bug fixes 
-are greatly appreciated however!
+At this time we have no concrete plans to expand on the game, but fork away!
