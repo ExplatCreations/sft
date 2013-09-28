@@ -2,7 +2,7 @@ Sniffy's Flip Trip
 ------------------
 
 Sniffy's Flip Trip is a free, cross-platform puzzle game made using the 
-libgdx framework.
+[libgdx](https://github.com/libgdx/libgdx) framework.
 
 Help Sniffy the bat step through 70 head scratching stages and topple 
 the world famous Puzzle Tower.
@@ -25,7 +25,7 @@ subrepositories.
 Build Instructions
 ------------------
 
-See https://github.com/ExplatCreations/sft/wiki/how-to
+See the [wiki page](https://github.com/ExplatCreations/sft/wiki/how-to) for instructions.
 
 Future
 ------
