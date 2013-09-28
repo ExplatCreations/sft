@@ -23,19 +23,37 @@ package com.explatcreations.sft.saving;
 import com.badlogic.gdx.utils.Json;
 import com.badlogic.gdx.utils.JsonWriter;
 import com.explatcreations.sft.Debug;
+import com.explatcreations.sft.Game;
 import com.explatcreations.sft.functions.IAction1;
 import com.explatcreations.sft.functions.IFunction1;
 
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
+import java.io.UnsupportedEncodingException;
+import java.net.URLDecoder;
 import java.util.Scanner;
 
 /**
  * @author moopslc
  */
 public class LoadUtils {
-    public static final String Directory = ".";
+
+    private static String getJarPath() {
+        if (Game.globals.IsDebugMode) {
+            return ".";
+        }
+
+        String path = LoadUtils.class.getProtectionDomain().getCodeSource().getLocation().getPath();
+        try {
+            path = URLDecoder.decode(path, "UTF-8");
+        } catch (UnsupportedEncodingException uee) {
+
+        }
+        return path;
+    }
+
+    public static final String Directory = getJarPath();
     public static final Json json = new Json();
     public static String loadFile(String path) throws FileNotFoundException {
         final File file = new File(path);
@@ -51,7 +69,7 @@ public class LoadUtils {
             final String path = dir + "/" + name;
             result = (T)json.fromJson(cl, loadFile(path));
         } catch (Exception e) {
-            //Debug.warning(e.getMessage());
+            Debug.warning(e.getMessage());
             result = makeNew.apply();
             flush(result, dir, name);
         }
