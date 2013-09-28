@@ -40,6 +40,10 @@ public class MDisplayMode {
         this.type = type;
     }
 
+    public MDisplayMode() {
+
+    }
+
     public static MDisplayMode makeNew() {
         return new MDisplayMode(Game.WindowWidth, Game.WindowHeight, DisplayType.Windowed);
     }
