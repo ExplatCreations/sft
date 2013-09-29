@@ -71,7 +71,7 @@ deweyvm -- programming
 
 paste -- graphics and music
 
-octoborg -- programming, game/level design
+Octoborg -- programming, game/level design
 
 ---- Special Thanks ----
 
