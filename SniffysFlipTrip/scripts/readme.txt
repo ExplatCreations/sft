@@ -66,6 +66,16 @@ deweyvm -- programming
 
 paste -- graphics and music
 
-octoborg -- programming, design
+octoborg -- programming, game/level design
 
-             
+---- Special Thanks ----
+
+All testers and supporters on irc.
+
+DrPetter - creator of bfxr
+
+freesound.org
+
+The awesome developers of the Libgdx framework.
+
+All the helpful people on #libgdx on freenode
