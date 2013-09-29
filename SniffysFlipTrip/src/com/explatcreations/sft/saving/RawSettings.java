@@ -50,7 +50,6 @@ public class RawSettings {
             return makeNew();
         }
     };
-
     public static final IAction1<RawSettings> verifier = new IAction1<RawSettings>() {
         @Override
         public void eval(RawSettings arg1) {
