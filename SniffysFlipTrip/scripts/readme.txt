@@ -11,8 +11,8 @@
         \/     |_||_||  __/   \/    |_|   |_||  __/ 
                      |_|                     |_|
              
-                         v 1.0.0
-                       Sept 28, 2013
+                         v 1.0.1
+                       Sept 29, 2013
              
 ------------------------------------------------------------------
 
@@ -44,6 +44,11 @@ run the command 'sh run.sh'. If java cannot be found, you will be directed
 where to download and install it.
 
 If you encounter any issues, see the Troubleshooting section below.
+
+---- Changelog ----
+
+v1.0.1
+    Fixed issue where windows version wouldn't save due to incorrect path.
 
 ---- Known Issues ----
 

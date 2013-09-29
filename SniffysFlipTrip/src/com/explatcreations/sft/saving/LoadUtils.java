@@ -44,11 +44,16 @@ public class LoadUtils {
             return ".";
         }
 
+
         String path = LoadUtils.class.getProtectionDomain().getCodeSource().getLocation().getPath();
+        if (!new File(path).isDirectory()) {
+            path = System.getProperty("user.dir");
+        }
+
         try {
             path = URLDecoder.decode(path, "UTF-8");
         } catch (UnsupportedEncodingException uee) {
-
+            throw new RuntimeException(uee);
         }
         return path;
     }

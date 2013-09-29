@@ -25,7 +25,7 @@ Do you want to download it?</value>
 </skeletonProperties>
 <skeletonProperties>
 <key>URL</key>
-<value>http://www.java.com</value>
+<value></value>
 </skeletonProperties>
 <skeletonProperties>
 <key>SingleProcess</key>

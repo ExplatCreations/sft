@@ -61,17 +61,16 @@ public class Game implements ApplicationListener {
     public static Assets assets;
     public static ModeManager mode;
     public static ScreenStretcher screenStretcher;
+    public static HardwareInfo.OS os = HardwareInfo.getOS();
     public static Settings settings = Settings.load();
     public static Save save = Save.load();
     public static JoypadHelper joypadHelper;
     public static Sepiaizer sepiaizer;
-    public static HardwareInfo.OS os;
     public static World world;
 
     @Override
     public void create() {
         Gdx.app.setLogLevel(Application.LOG_ERROR);
-        Game.os = HardwareInfo.getOS();
         Game.world = new World();
         refreshJoypadHelper();
         Game.globals.IsDemo |= Game.world.getLevel(LevelIndex.Last) == null;
