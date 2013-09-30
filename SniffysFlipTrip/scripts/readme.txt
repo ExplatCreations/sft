@@ -77,6 +77,8 @@ Octoborg -- programming, game/level design
 
 All testers and supporters on irc.
 
+rena -- redstone wizard
+
 DrPetter - creator of bfxr
 
 freesound.org
