@@ -11,8 +11,8 @@
         \/     |_||_||  __/   \/    |_|   |_||  __/ 
                      |_|                     |_|
              
-                         v 1.0.1
-                       Sept 29, 2013
+                         v 1.0.2
+                       Oct 1, 2013
              
 ------------------------------------------------------------------
 
@@ -47,6 +47,9 @@ If you encounter any issues, see the Troubleshooting section below.
 
 ---- Changelog ----
 
+v1.0.2
+    Fixed cutoff on back button on notes panel.
+
 v1.0.1
     Fixed issue where windows version wouldn't save due to incorrect path.
 
@@ -77,7 +80,7 @@ Octoborg -- programming, game/level design
 
 All testers and supporters on irc.
 
-rena -- redstone wizard
+rena -- redstone wizard, without whom this game could not have been made
 
 DrPetter - creator of bfxr
 

@@ -71,7 +71,7 @@ public class NotesPanel extends Panel {
                 cancel();
             }
         };
-        this.backButton = new Button("Back", Game.RenderWidth - 100, Game.RenderHeight - 32, back, Controls.Cancel);
+        this.backButton = new Button("Back", Game.RenderWidth - 150, Game.RenderHeight - 32, back, Controls.Cancel);
     }
 
     private void initTabs() {
