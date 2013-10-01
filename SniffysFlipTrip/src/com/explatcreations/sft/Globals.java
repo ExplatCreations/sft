@@ -31,6 +31,6 @@ public class Globals {
     public boolean IsDemo = false;
     public boolean DiagnoseGamepad = false;
     public boolean DisplayHardware = false;
-    public String VersionString = "Version 1.0";
+    public String VersionString = "Version 1.0.2";
     public int LastDemoStageIndex;
 }

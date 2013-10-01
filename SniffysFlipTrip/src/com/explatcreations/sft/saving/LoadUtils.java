@@ -44,7 +44,6 @@ public class LoadUtils {
             return ".";
         }
 
-
         String path = LoadUtils.class.getProtectionDomain().getCodeSource().getLocation().getPath();
         if (!new File(path).isDirectory()) {
             path = System.getProperty("user.dir");
