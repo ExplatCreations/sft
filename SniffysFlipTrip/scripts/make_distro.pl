@@ -41,6 +41,7 @@ sub clean {
 
 sub make_common {
     my $subdir = $_[0];
+    print($subdir."\n");
     print("Making $subdir.zip\n");
     my $path = "$output_dir/$subdir";
     mkdir($path) &&\
@@ -59,6 +60,7 @@ sub make_linux {
 sub make_windows {
     my $version_string = $_[0];
     my $subdir = "$prefix\_windows$version_string";
+    
     make_common($subdir);
     my $cwd = getcwd();
     # jsmooth is a windows program so we cant pass it a cygwin path
@@ -76,7 +78,7 @@ sub zip {
     my $dir = $_[0];
 
     my $zip = Archive::Zip->new();
-    $zip->addTree($dir);
+    $zip->addTree("$dir", "SniffysFlipTrip/");
     ($zip->writeToFileNamed("$dir.zip") == AZ_OK) or die $!;
     rmtree($dir) or die $!;
 
