@@ -41,7 +41,6 @@ sub clean {
 
 sub make_common {
     my $subdir = $_[0];
-    print($subdir."\n");
     print("Making $subdir.zip\n");
     my $path = "$output_dir/$subdir";
     mkdir($path) &&\
