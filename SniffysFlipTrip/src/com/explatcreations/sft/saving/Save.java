@@ -37,7 +37,7 @@ public class Save {
     private static final String directory = LoadUtils.Directory;
 
     private static final int NumLevelsToUnlock = 3;
-    private static final int[] noteStages = new int[]{0,2,5,8,13,16,19,21,32,36,39,43};
+    private static final int[] noteStages = new int[]{0,2,5,8,13,16,21,32,36,39,43};
     private static final int[] unskippableStages = new int[]{0,2,5,8,13,16,19,21,25,28,32,36,39,43};
 
     private RawSave raw;
