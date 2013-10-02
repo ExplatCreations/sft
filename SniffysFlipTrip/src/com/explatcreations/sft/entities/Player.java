@@ -272,7 +272,7 @@ public class Player extends GridEntity implements IMagicAcceptor {
     }
 
     public Point2i isTileDone() {
-        if (timer.getMax() == MoveTime) {
+        if (timer.getMax() == MoveTime || queuedMove == null) {
             return null;
         }
         final int value = timer.getValue();
