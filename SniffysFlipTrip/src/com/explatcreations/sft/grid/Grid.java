@@ -79,6 +79,11 @@ public class Grid extends GridBase implements IGridView {
         skipFrame();
     }
 
+    @Override
+    protected boolean isClearing() {
+        return levelComplete;
+    }
+
     //allows comitting for a single frame
     @Override
     public void allowCommit() {
