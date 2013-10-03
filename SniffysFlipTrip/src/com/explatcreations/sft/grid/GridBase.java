@@ -152,7 +152,12 @@ public abstract class GridBase implements IGrid {
         return tryUndo(boardActive, false);
     }
 
+    protected abstract boolean isClearing();
+
     public boolean tryUndo(boolean boardActive, boolean force) {
+        if (isClearing()) {
+            return false;
+        }
         if (Controls.Undo.isPressed() || force) {
             heldTimer += 1;
         } else {
