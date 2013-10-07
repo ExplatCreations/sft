@@ -81,7 +81,6 @@ public class JoypadWrapper {
 
             @Override
             public boolean povMoved (Controller controller, int povIndex, PovDirection value) {
-                System.out.println("pov move detected " + povIndex + " " + value);
                 final List<Integer> axisIndices = new ArrayList<Integer>();
                 final List<Integer> signs = new ArrayList<Integer>();
                 final int horizontalAxis = Controls.HorizontalAxis;
