@@ -11,8 +11,8 @@
         \/     |_||_||  __/   \/    |_|   |_||  __/ 
                      |_|                     |_|
              
-                         v 1.0.3
-                       Oct 2, 2013
+                         v 1.0.4
+                       Oct 8, 2013
              
 ------------------------------------------------------------------
 
@@ -46,6 +46,10 @@ where to download and install it.
 If you encounter any issues, see the Troubleshooting section below.
 
 ---- Changelog ----
+
+v1.0.4
+    Prevented crash associated with null queued moves.
+    Undoing after the level is complete is no longer allowed.
 
 v1.0.3
     Pushables and Ice notes are now in the correct order.
